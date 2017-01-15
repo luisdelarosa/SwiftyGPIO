@@ -65,6 +65,22 @@ The same binaries should work for BeagleBoneBlack, C.H.I.P. or one of the other 
 
 If you have a ARMv6 RaspberryPi 1 (A,B,A+,B+) or a Zero, get the precompiled binaries or build them yourself following [this guide](http://saygoodnight.com/2016/05/08/building-swift-for-armv6.html). 
 
+Make sure to put swift in your $PATH. For example if you downloaded the Ubuntu binaries above into ~/swift3, then put
+
+```export PATH=~/swift3/usr/bin:$PATH```
+
+into your path.
+
+CHeck to see if swift can compile by issuing
+
+	swift build
+	
+	If it says 
+```error: invalid inferred toolchain: could not find `clang````
+
+	Then install clang.
+
+
 Once done, if your version of Swift does not support the Swift Package Manager, just download all the needed files: 
 
     wget https://raw.githubusercontent.com/uraimo/SwiftyGPIO/master/Sources/SwiftyGPIO.swift https://raw.githubusercontent.com/uraimo/SwiftyGPIO/master/Sources/Thread.swift https://raw.githubusercontent.com/uraimo/SwiftyGPIO/master/Sources/POSIXError.swift https://raw.githubusercontent.com/uraimo/SwiftyGPIO/master/Sources/SunXi.swift
