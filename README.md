@@ -79,6 +79,12 @@ CHeck to see if swift can compile by issuing
 ```error: invalid inferred toolchain: could not find `clang````
 
 	Then install clang.
+	
+	
+TODO: consider making a prequisite to do:
+
+	sudo apt-get install clang
+	sudo apt-get install git
 
 
 Once done, if your version of Swift does not support the Swift Package Manager, just download all the needed files: 
